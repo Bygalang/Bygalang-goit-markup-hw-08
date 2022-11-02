@@ -1,0 +1,40 @@
+.gallery__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 50%;
+}
+
+.gallery__item {
+    width: 270px;
+}
+
+.svg-item {
+    display: flex;
+    height: 120px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-col-btn);
+    margin-bottom: 30px;
+}
+
+.svg-item__icon{
+    background: var(--background-col-btn);
+}
+
+
+.gallery__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.gallery__text {
+    line-height: var(--typical-line-height);
+    color: var(--second-color);
+}
