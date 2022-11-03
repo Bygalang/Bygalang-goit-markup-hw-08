@@ -12,18 +12,16 @@
 }
 
 .clients-list  {
-    @media screen and (min-width: 320px){
-        display: flex;
-        flex-wrap: wrap;
-        
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-        }
+
 }
 
 
 .clients-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     display: flex;
     align-items: center;

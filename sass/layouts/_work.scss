@@ -1,12 +1,24 @@
 .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     border-radius: 50%;
+    
 }
 
 .gallery__item {
-    width: 270px;
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child{
+    margin-bottom: 60px;
 }
+ @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+ }
+
+}
+
 
 .svg-item {
     display: flex;
@@ -18,7 +30,7 @@
     margin-bottom: 30px;
 }
 
-.svg-item__icon{
+.svg-item__icon {
     background: var(--background-col-btn);
 }
 
