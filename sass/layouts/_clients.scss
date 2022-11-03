@@ -1,6 +1,7 @@
 .clients {
     padding-top: 88px;
     padding-bottom: 93px;
+    
 }
 
 .clients-title {
@@ -10,11 +11,16 @@
     margin-bottom: 50px;
 }
 
-.clients-list {
-    display: flex;
+.clients-list  {
+    @media screen and (min-width: 320px){
+        display: flex;
+        flex-wrap: wrap;
+        
     justify-content: center;
     gap: 30px;
+        }
 }
+
 
 .clients-link {
     width: 170px;
@@ -40,3 +46,4 @@
             fill: var(--hover-color);
         }
 }
+

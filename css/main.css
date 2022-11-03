@@ -1,3 +1,11 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--main-color);
+  background-color: var(--studio-footer-color);
+  letter-spacing: 0.03em;
+}
+
 .list {
   list-style: none;
 }
@@ -33,21 +41,20 @@ button {
 
 img {
   display: block;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: var(--main-color);
-  background-color: var(--studio-footer-color);
-  letter-spacing: 0.03em;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .backdrop {
@@ -379,10 +386,13 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+@media screen and (min-width: 320px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .clients-link {
@@ -556,12 +566,6 @@ body {
   padding-bottom: 60px;
 }
 
-.contacts-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
 .footer-logo {
   display: block;
   font-family: "Raleway";
@@ -572,6 +576,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--hover-color);
   margin-bottom: 20px;
+  margin-left: 163px;
 }
 
 .studio-footer {
@@ -612,11 +617,13 @@ body {
   justify-content: center;
   color: var(--adress-link-color);
   margin-bottom: 20px;
+  padding-left: 167px;
 }
 
 .join-list {
   display: flex;
   gap: 10px;
+  padding-left: 137px;
 }
 
 .join-link {
@@ -648,10 +655,11 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--adress-link-color);
+  padding-left: 137px;
 }
 
 .subscription-input {
-  min-width: 358px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   padding: 16px 15px;
@@ -698,7 +706,7 @@ body {
   justify-content: center;
   letter-spacing: 0.06em;
   color: var(--adress-link-color);
-  margin: 0 auto;
+  margin-left: 140px;
   min-width: 200px;
   height: 50px;
   background: var(--background-color-btn);
@@ -802,7 +810,6 @@ body {
 
 .header {
   background-color: var(--adress-link-color);
-  border-bottom: 1px solid var(--bottom-line);
 }
 
 .header__container {
@@ -1019,12 +1026,7 @@ body {
 }
 
 .team {
-  background-color: var(--background-col-btn);
   padding-bottom: 94px;
-}
-
-.team-list {
-  display: flex;
 }
 
 .team-soc-list {
@@ -1041,6 +1043,11 @@ body {
 }
 .team-item:last-child {
   margin-right: 0px;
+}
+@media screen and (min-width: 320px) {
+  .team-item {
+    min-width: 320px;
+  }
 }
 
 .team-soc-icon {
@@ -1087,7 +1094,6 @@ body {
 }
 
 .gallery__list {
-  display: flex;
   justify-content: center;
   gap: 30px;
   border-radius: 50%;
