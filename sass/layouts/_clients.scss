@@ -16,7 +16,20 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    
 
+}
+
+.clients-item{
+@media screen and (min-width: 768px) {
+width: calc((100% - 60px) / 3);
+}
+
+@media screen and (min-width: 1200px) {
+width: calc((100% - 150px) / 6);
+display: flex;
+}
+            
 }
 
 
@@ -35,6 +48,9 @@
             border: 1px solid var(--hover-color);
             color: var(--hover-color);
         }
+        
+
+        
 }
 
 .clients-icon {
