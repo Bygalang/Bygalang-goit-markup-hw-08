@@ -1,52 +1,55 @@
-.main {
-    background-color: var(--body-backgrounf-color);
-}
+
 .hero {
-        background-color: var(--background-color-footer);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/header-1x.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto;
-        max-width: 1600px;
-        text-align: center;
-        margin: 0 auto;
-       
-
-       
-
-    // @media screen and (min-width: 480px) {
-    //         width: 480px;
-    //         height: 400px;
-    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //             url(../images/header-1x.jpg);
-    //             padding: 200px 0px;
-    //         background-repeat: no-repeat;
-    //         background-position: center;
-    //         background-size: auto;
-    //         max-width: 480px;
-    //         margin: 0 auto;
+    display: flex;
+    background-color: var(--background-color-footer);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 118px 60px;
     
-    //     }
-    
+    @media screen and (min-width: 768px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/header-tablet.jpg);
+                padding: 118px 204px;
+        }
+
+                @media screen and (min-width: 768px) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/all.jpg);
+                    padding: 200px 0;
+                }
+
+        
 }
 
 
-.container__title {
-    display: block;
-    font-weight: 900;
+.hero-title {
+font-weight: 900;
     font-size: 26px;
-    padding-right: 60px;
-    line-height: 1.61;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--main-hero-color);
-    margin-left: 0 auto;
-    margin-right: 0 auto;
     margin-bottom: 30px;
-    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+    
     
 
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 700px;
+    }
 }
 
 .container__btn {

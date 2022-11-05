@@ -587,6 +587,30 @@ body {
   padding-bottom: 60px;
 }
 
+.contacts-container {
+  text-align: center;
+  align-items: baseline;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 89px;
+    padding-left: 76px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-container {
+    text-align: inherit;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
 .footer-logo {
   display: block;
   font-family: "Raleway";
@@ -677,6 +701,27 @@ body {
 
 @media screen and (min-width: 768px) {
   .subscription {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    width: 570px;
+    margin: 0;
+    display: flex;
+    margin-left: 93px;
+  }
+}
+
+.subscription-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .subscription-form {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
@@ -694,7 +739,7 @@ body {
 }
 
 .subscription-input {
-  width: 450px;
+  min-width: 450px;
   height: 50px;
   margin-bottom: 20px;
   padding: 16px 15px;
@@ -732,9 +777,15 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  .subscription-input {
+    min-width: 358px;
+    margin-right: 12px;
+  }
+}
 
 .btn-subscription {
-  display: flex;
+  display: inline-flex;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
@@ -742,8 +793,7 @@ body {
   justify-content: center;
   letter-spacing: 0.06em;
   color: var(--adress-link-color);
-  margin-left: 140px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background: var(--background-color-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -946,34 +996,50 @@ body {
   fill: currentColor;
 }
 
-.main {
-  background-color: var(--body-backgrounf-color);
-}
-
 .hero {
+  display: flex;
   background-color: var(--background-color-footer);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   max-width: 1600px;
   text-align: center;
   margin: 0 auto;
+  padding: 118px 60px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tablet.jpg);
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/all.jpg);
+    padding: 200px 0;
+  }
 }
 
-.container__title {
-  display: block;
+.hero-title {
   font-weight: 900;
   font-size: 26px;
-  padding-right: 60px;
-  line-height: 1.61;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--main-hero-color);
-  margin-left: 0 auto;
-  margin-right: 0 auto;
   margin-bottom: 30px;
-  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 700px;
+  }
 }
 
 .container__btn {
