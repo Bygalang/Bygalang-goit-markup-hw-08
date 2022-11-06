@@ -1,3 +1,9 @@
+.practical {
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
+}
+
 .practical-list {
     display: flex;
     gap: 30px;

@@ -20,7 +20,7 @@ text-align: center;
     }
 
         @media screen and (min-width: 1200px) {
-            text-align: inherit;
+            text-align: center;
                 display: flex;
                 align-items: baseline;
                 justify-content: space-between;
@@ -141,7 +141,7 @@ justify-content: center;
         margin-right: auto;
     }
 
-        @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 1200px) {
             width: 570px;
             margin: 0;
             display: flex;
@@ -153,17 +153,21 @@ justify-content: center;
 }
 
 .subscription-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
-
+    flex-direction: row;
 @media screen and (min-width: 768px) {
-        width: 450px;
+    display: flex;
+        flex-wrap: wrap;
+    width: 450px;
+        justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        
     }
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            justify-content: left;
+           
+        }
 
 
 }
