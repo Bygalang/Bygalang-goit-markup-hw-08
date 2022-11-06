@@ -18,14 +18,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     padding: 40px;
     transform: translate(-50%, -50%) scale(1);
     background-color: var(--adress-link-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+            min-width: 528px;
+            min-height: 581px;
+        }
 }
 
 .backdrop.is-hidden .modal {
@@ -155,13 +160,20 @@
 .conditions-label {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        }
+    
 }
 
 .conditions-label span {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,6 +196,8 @@
     text-decoration-line: underline;
     color: var(--hover-color);
 }
+
+
 
 .form-conditions {
     display: flex;
