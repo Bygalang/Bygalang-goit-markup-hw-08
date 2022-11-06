@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     
+    
 }
 
 .nav {
@@ -23,11 +24,7 @@
     @media screen and (max-width: 767px) {
             display: none;   
         }
-    @media screen and (min-width: 768px) {
-    margin-left: 88px;
     
-        
-                }
 }
 
 .nav__logo {
@@ -37,6 +34,7 @@
     line-height: 1.19;
     color: var(--hover-color);
     margin: 16px 0 16px 15px;
+    
    
 }
 
@@ -109,37 +107,31 @@
                     display: none;
             }
         @media screen and (min-width: 768px) {
-            
-
+           display: inline;
+           
+           
                 }
 }
 
-.tel-mail{
-    display: flex;
-    padding-top: 22px;
-}
 
 .contact-list {
-    display: flex;
+    display: block;
     margin-left: auto;
     gap: 30px;
     @media screen and (min-width: 768px) {
-    display: flex;
-        margin-left: auto;
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-        
-        
-    
+        min-width: 768px;
+        height: 80px;
+        padding-top: 22px;
+        margin-left: 90px; 
     }
 }
   
-  
+
 
 .contact-list__icon {
     margin-right: 10px;
     fill: currentColor;
+    
 }
 
 

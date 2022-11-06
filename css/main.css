@@ -938,11 +938,6 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .header-list {
-    margin-left: 88px;
-  }
-}
 
 .nav__logo {
   font-family: "Raleway";
@@ -1018,23 +1013,23 @@ body {
     display: none;
   }
 }
-.tel-mail {
-  display: flex;
-  padding-top: 22px;
+@media screen and (min-width: 768px) {
+  .contact-list__link {
+    display: inline;
+  }
 }
 
 .contact-list {
-  display: flex;
+  display: block;
   margin-left: auto;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .contact-list {
-    display: flex;
-    margin-left: auto;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+    min-width: 768px;
+    height: 80px;
+    padding-top: 22px;
+    margin-left: 90px;
   }
 }
 
