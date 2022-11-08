@@ -1,200 +1,175 @@
 .footer {
-    background-color: var(--background-color-footer);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
-        
+  background-color: var(--background-color-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts-container {
-text-align: center;
+  text-align: center;
+  align-items: baseline;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 89px;
+    padding-left: 76px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+    display: flex;
     align-items: baseline;
     justify-content: space-between;
-    @media screen and (min-width: 768px){
-    display: flex;
-        flex-wrap: wrap;
-        padding-right: 89px;
-        padding-left: 76px;
-        text-align: center;
-    
-    }
-
-        @media screen and (min-width: 1200px) {
-            text-align: center;
-                display: flex;
-                align-items: baseline;
-                justify-content: space-between;
-                padding: 0;
-            
-        }
+    padding: 0;
+  }
 }
 
 .footer-logo {
-    display: block;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--hover-color);
-    text-align: center;
-    margin-bottom: 20px;
+  display: block;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .studio-footer {
-    color: var(--studio-footer-color);
+  color: var(--studio-footer-color);
 }
 
 /*----------------Adress-----------------*/
 
-.adress-list{
-    text-align: center;
-
-
+.adress-list {
+  text-align: center;
 }
 .adress-item {
-    margin-bottom: 8px;
-    
+  margin-bottom: 8px;
 }
 
 .adress-item:last-child {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .adress-link {
-    font-style: normal;
-    line-height: var(--typical-line-height);
-    color: var(--adress-link-color);
-    
-    
+  font-style: normal;
+  line-height: var(--typical-line-height);
+  color: var(--adress-link-color);
 }
 
-
 .footer-contacts-link {
-    display: inline-block;
-    font-style: normal;
-    line-height: var(--typical-line-height);
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-        &:focus {
-            color: var(--hover-color);
-        }
+  display: inline-block;
+  font-style: normal;
+  line-height: var(--typical-line-height);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
 
 /*---------------Join----------------*/
 
-
 .join-text {
-    font-weight: 700;
-    line-height: 1.14px;
-    text-transform: uppercase;
-    text-align: center;
-    justify-content: center;
-    color: var(--adress-link-color);
-    margin-top: 60px;
-    margin-bottom: 20px;
-    
+  font-weight: 700;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  color: var(--adress-link-color);
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .join-list {
-    display: flex;
-justify-content: center;
-    gap: 10px;
-    margin-bottom: 60px;
-    
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 60px;
 }
 
-
-
 .join-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-        &:focus {
-            background-color: var(--hover-color);
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
 .join-icon {
-    fill: var(--adress-link-color);
-    &:hover,
-        &:focus {
-            color: var(--adress-link-color);
-        }
+  fill: var(--adress-link-color);
+  &:hover,
+  &:focus {
+    color: var(--adress-link-color);
+  }
 }
 
-
 .subscription {
-    
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-                @media screen and (min-width: 1200px) {
-            width: 570px;
-            margin: 0;
-            display: flex;
-            margin-left: 93px;
-        }
-    
-
-        
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin: 0;
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .subscription-form {
-    flex-direction: row;
-@media screen and (min-width: 768px) {
+  flex-direction: row;
+  @media screen and (min-width: 768px) {
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 450px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-            justify-content: left;
-           
-        }
-
-
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    justify-content: left;
+  }
 }
 
 .subscription-text {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--adress-link-color);
-    
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--adress-link-color);
 }
 
 .subscription-input {
-    min-width: 450px;
-    height: 50px;
-    margin-bottom: 20px;
-    padding: 16px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline-color: transparent;
-    color: var(--adress-link-color);
-    background-color: var(--background-color-footer);
-    &::placeholder {
+  min-width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 16px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline-color: transparent;
+  color: var(--adress-link-color);
+  background-color: var(--background-color-footer);
+  &::placeholder {
     font-size: 16px;
     line-height: 1.25px;
     padding: 0 auto;
@@ -202,39 +177,31 @@ justify-content: center;
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-        }
-     @media screen and (min-width: 1200px){
-        min-width: 358px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
     margin-right: 12px;
-                }
-
-                
-        
-
+  }
 }
 
 .btn-subscription {
-    display: inline-flex;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 0.06em;
-    color: var(--adress-link-color);
-    min-width: 200px;
-    height: 50px;
-    background: var(--background-color-btn);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-
-
-
- }
+  display: inline-flex;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: var(--adress-link-color);
+  min-width: 200px;
+  height: 50px;
+  background: var(--background-color-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
 
 .subscription-icon {
-    margin-left: 10px;
-
+  margin-left: 10px;
 }
