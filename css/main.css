@@ -93,6 +93,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    min-width: 95%;
+    min-height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
@@ -1010,7 +1016,6 @@ body {
 
 .no-padding {
   padding-top: 0;
-  padding-bottom: 0;
 }
 
 .contact-list__link {
@@ -1171,6 +1176,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--hover-color);
 }
+@media screen and (max-width: 479px) {
+  .comunication-link {
+    font-size: 30px;
+  }
+}
 
 .comunication-mail-link {
   font-weight: 500;
@@ -1202,6 +1212,11 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--hover-color);
+}
+@media screen and (max-width: 479px) {
+  .mob-soc-link {
+    font-size: 12px;
+  }
 }
 
 .hero {
@@ -1340,7 +1355,6 @@ body {
   display: flex;
   bottom: 0;
   right: 0;
-  padding: 27px 107px;
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
@@ -1461,6 +1475,7 @@ body {
 @media screen and (min-width: 1200px) {
   .gallery__item {
     width: calc((100% - 150px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -1484,6 +1499,16 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__title {
+    text-align: left;
+  }
 }
 
 .gallery__text {
