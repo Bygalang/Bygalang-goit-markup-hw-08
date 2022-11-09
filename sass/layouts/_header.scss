@@ -148,6 +148,9 @@
 }
 
 .mob-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   position: fixed;
   top: 0;
   left: 0;
@@ -189,7 +192,7 @@
   padding-left: 25px;
 }
 .page-list-item:nth-last-child(1) {
-  margin-bottom: 50px;
+  margin-bottom: 302px;
 }
 
 .page-link {

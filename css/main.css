@@ -415,6 +415,11 @@ body {
   gap: 30px;
 }
 
+@media screen and (min-width: 320px) {
+  .clients-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 768px) {
   .clients-item {
     width: calc((100% - 60px) / 3);
@@ -428,7 +433,7 @@ body {
 }
 
 .clients-link {
-  width: 210px;
+  width: 100%;
   height: 92px;
   display: flex;
   align-items: center;
@@ -614,11 +619,21 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contacts-container {
-    text-align: center;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    text-align: left;
   }
 }
 
@@ -631,7 +646,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hover-color);
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -640,12 +654,8 @@ body {
 }
 
 /*----------------Adress-----------------*/
-.adress-list {
-  text-align: center;
-}
-
 .adress-item {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .adress-item:last-child {
@@ -747,6 +757,7 @@ body {
 }
 
 .subscription-text {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -757,7 +768,7 @@ body {
 }
 
 .subscription-input {
-  min-width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding: 16px 15px;
@@ -794,6 +805,11 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .subscription-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription-input {
@@ -1084,6 +1100,11 @@ body {
   height: 100vh;
   padding-bottom: 48px;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .mob-menu > .container {
   height: 100%;
   display: flex;
@@ -1115,7 +1136,7 @@ body {
 }
 
 .page-list-item:nth-last-child(1) {
-  margin-bottom: 50px;
+  margin-bottom: 302px;
 }
 
 .page-link {
@@ -1358,6 +1379,7 @@ body {
 }
 
 .team-item {
+  width: 100%;
   background: var(--adress-link-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1460,6 +1482,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .gallery__text {
