@@ -85,7 +85,8 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--second-color);
   padding-top: 32px;
@@ -107,6 +108,8 @@
   @media screen and (min-width: 1200px) {
     padding: 0;
     display: flex;
+    font-size: 14px;
+      line-height: 1.14;
   }
 }
 
@@ -142,9 +145,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     display: none;
-  }
+     }
+
 }
 
 .mob-menu {
@@ -193,6 +197,10 @@
 }
 .page-list-item:nth-last-child(1) {
   margin-bottom: 302px;
+  @media screen and (max-width: 479px) {
+      margin-bottom: 250px;
+    }
+    
 }
 
 .page-link {

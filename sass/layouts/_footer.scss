@@ -25,6 +25,12 @@
   }
 }
 
+.contact{
+@media screen and (max-width: 1199px){ 
+  margin-bottom: 60px;
+}
+ }
+
 .footer-logo {
   display: block;
   font-family: 'Raleway';
@@ -75,9 +81,19 @@
 
 /*---------------Join----------------*/
 
+.join{
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  @media screen and (min-width: 1200px){
+  margin-bottom: 0;
+   }
+}
+
 .join-text {
   font-weight: 700;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
@@ -85,7 +101,7 @@
   margin-bottom: 20px;
 
   @media screen and (min-width: 480px) {
-    margin-top: 60px;
+    
   }
 
   @media screen and (min-width: 768px) {
@@ -98,7 +114,6 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-bottom: 0;
