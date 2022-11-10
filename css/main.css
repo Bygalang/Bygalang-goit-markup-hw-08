@@ -620,7 +620,6 @@ body {
     flex-wrap: wrap;
     padding-right: 89px;
     padding-left: 76px;
-    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -628,17 +627,7 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact {
+    padding: 0 15px;
     text-align: left;
   }
 }
@@ -693,8 +682,18 @@ body {
   text-align: center;
   justify-content: center;
   color: var(--adress-link-color);
-  margin-top: 60px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .join-text {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .join-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .join-list {
@@ -702,6 +701,12 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .join-list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .join-link {
@@ -738,7 +743,23 @@ body {
     width: 570px;
     margin: 0;
     display: flex;
-    margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .contact {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    margin-bottom: 0px;
   }
 }
 
@@ -819,8 +840,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .subscription-input {
-    min-width: 358px;
+    width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
