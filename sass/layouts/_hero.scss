@@ -8,7 +8,7 @@
   max-width: 1600px;
   text-align: center;
   margin: 0 auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: var(--bg-gradient), url(../images/header-2x.jpg);
   }
